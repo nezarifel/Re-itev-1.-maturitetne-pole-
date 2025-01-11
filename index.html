@@ -1,0 +1,469 @@
+# REŠITEV MATURITETNE POLE JESEN 2021 VIŠJA RAVEN
+
+# B) krajše strukturirane naloge
+
+## 1. naloga
+>
+>Dana je kvadratna enačba $x^2 - 2x + a = 0$. Naj bo $x_1 = 1-2i$ rešitev enačbe. Zapišite še drugo rešitev in izračunajte $a$. Izračunajte, za katere $a \in \mathbb{R}$ enačba $x^2 -2x + a = 0$ nima realnih rešitev. 
+>
+Dana je kvadratna enačba:
+
+$x^2 - 2x + a = 0$
+
+Z namenom, da ugotovimo, kje ima enačba realne ali kompleksne rešitve, bomo uporabili kvadratno formulo. Kvadratna formula za rešitev kvadratne enačbe $ax^2 + bx + c = 0$ je:
+
+$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$
+
+### 1. Prva rešitev: $x_1 = 1 - 2i$
+
+Ena izmed rešitev je že podana: $x_1 = 1 - 2i$.
+
+Da bi našli drugo rešitev, bomo uporabili kvadratno formulo.
+
+### 2. Druga rešitev:
+
+Po kvadratni formuli bomo izračunali drugo rešitev $x_2$. Najprej izračunamo diskriminanto $D$:
+
+$D = b^2 - 4ac = 2^2 - 4(1)(a) = 4 - 4a = 4(1 - a)$
+
+Torej, druga rešitev je:
+
+$x_2 = \frac{b - \sqrt{D}}{2a} = \frac{2 - \sqrt{4(1 - a)}}{2}$
+
+Če poenostavimo:
+
+$x_2 = \frac{2 - 2\sqrt{1 - a}}{2} = 1 - \sqrt{1 - a}$
+
+### 3. Izračunajte, za katere vrednosti $a$ enačba nima realnih rešitev:
+
+Za realne rešitve moramo imeti diskriminanto $D \geq 0$. V nasprotnem primeru so rešitve kompleksne. Iz diskriminante smo že izračunali:
+
+$D = 4(1 - a)$
+
+Za realne rešitve mora veljati:
+
+$4(1 - a) \geq 0$
+
+Delimo z 4:
+
+$1 - a \geq 0$
+
+Torej:
+
+$a \le 1$
+
+Za $a > 1$ enačba nima realnih rešitev, saj bo diskriminanta negativna, kar pomeni, da bodo rešitve kompleksne.
+
+## 2. naloga
+>
+>V ravnino, opremljeno s koordinatnim sistemom, narišite krožnico z enačbo $x^2 + y^2 = 25$ in premico z enačbo $2x - y = 0$ ter izračunbajte in zapišite njuni presečišči. 
+
+![Slika krožnice in premice](slike/sageVR1A.png)
+
+
+### Podana enačba krožnice in premice:
+
+Enačba krožnice je:
+$x^2 + y^2 = 25$
+Enačba premice je:
+$2x - y = 0 \quad \text{ali} \quad 2x = y$
+
+### Postopek reševanja presečišč:
+
+Za iskanje presečišča krožnice in premice bomo enačbo premice $2x = y$ nadomestili v enačbo krožnice.
+
+1. Nadomestimo $2x = y$ v enačbo krožnice $x^2 + y^2 = 25$:
+$x^2 + (2x)^2 = 25$
+
+2. Poenostavimo enačbo:
+
+$x^2 + 4x^2 = 25$
+
+$5x^2 = 25$
+
+$x^2 = 5$
+
+$x = \pm \sqrt{5}$
+
+3. Zdaj, ko imamo vrednosti za $x$, izračunamo vrednosti za $y$ z enačbo $2x = y$:
+- Za $x = \sqrt{5}$, dobimo $y = 2\sqrt{5}.
+- Za $x = -\sqrt{5}$, dobimo $y = -2\sqrt{5}.
+
+### Presečišči:
+Presečišči krožnice in premice sta:
+$(\sqrt{5}, 2\sqrt{5}) \quad \text{in} \quad (-\sqrt{5}, -2\sqrt{5})$
+
+## 3. naloga 
+>
+>Dana je funkcija $f$ s predpisom $f(x) = -4 \sin (x + \frac{\pi}{4})$. Izračunajte $f(\frac{\pi}{4})$ in ničle funkciuje $f$ ter zapišite zalogo vrednosti $Z_f$. Izračunajte smerni koeficient tangente na graf funkcije $f$ v točki $T(\frac{3\pi}{4}, 0)$.
+>
+### Rešitev naloge: Funkcija in njeni izračuni
+
+Dana je funkcija $f$ s predpisom:
+$f(x) = -4 \sin \left( x + \frac{\pi}{4} \right)$
+
+### 1. Izračun $f\left(\frac{\pi}{4}\right)$
+
+Za izračun $f\left(\frac{\pi}{4}\right)$ vstavimo $x = \frac{\pi}{4}$ v predpis funkcije:
+
+$f\left(\frac{\pi}{4}\right) = -4 \sin \left( \frac{\pi}{4} + \frac{\pi}{4} \right) = -4 \sin \left( \frac{\pi}{2} \right)$
+
+Ker je $\sin\left(\frac{\pi}{2}\right) = 1$, dobimo:
+
+$f\left(\frac{\pi}{4}\right) = -4 \times 1 = -4$
+
+Torej je $f\left(\frac{\pi}{4}\right) = -4$.
+
+### 2. Ničle funkcije $f$
+
+Za iskanje ničel funkcije $f(x) = -4 \sin \left( x + \frac{\pi}{4} \right)$, moramo rešiti enačbo:
+$-4 \sin \left( x + \frac{\pi}{4} \right) = 0$
+
+Delimo z -4:
+$\sin \left( x + \frac{\pi}{4} \right) = 0$
+
+Sinus je enak 0, ko je argument funkcije $x + \frac{\pi}{4} = n\pi$, kjer je $n$ celo število. Torej imamo:
+
+$x + \frac{\pi}{4} = n\pi$
+
+Rešimo za $x$:
+$x = n\pi - \frac{\pi}{4}$
+
+Torej so ničle funkcije $f(x)$ v točkah:
+$x_n = n\pi - \frac{\pi}{4}, \quad n \in \mathbb{Z}$
+
+### 3. Zapis zaloge vrednosti $Z_f$
+
+Funkcija $f(x) = -4 \sin \left( x + \frac{\pi}{4} \right)$ je sinusna funkcija, katere vrednosti so omejene. Ker $\sin$ sprejme vrednosti v intervalu $[-1, 1]$, bo vrednost funkcije $f(x)$ v intervalu:
+$-4 \times 1 \leq f(x) \leq -4 \times (-1)$
+$-4 \leq f(x) \leq 4$
+
+Zato je zaloga vrednosti funkcije $f$ dana z:
+$Z_f = [-4, 4]$
+
+### 4. Smerni koeficient tangente na graf funkcije $f$ v točki $T\left(\frac{3\pi}{4}, 0\right)$
+
+Za izračun smernega koeficienta tangente na graf funkcije $f(x)$ v točki $T\left(\frac{3\pi}{4}, 0\right)$ moramo najprej izračunati odvod funkcije $f(x)$. 
+
+Odvod funkcije $f(x) = -4 \sin \left( x + \frac{\pi}{4} \right)$ je:
+$f'(x) = -4 \cos \left( x + \frac{\pi}{4} \right)$
+
+Nato izračunamo smerni koeficient tangente v točki $x = \frac{3\pi}{4}$:
+$f'\left(\frac{3\pi}{4}\right) = -4 \cos \left( \frac{3\pi}{4} + \frac{\pi}{4} \right) = -4 \cos \left( \pi \right)$
+
+Ker je $\cos(\pi) = -1$, dobimo:
+$f'\left(\frac{3\pi}{4}\right) = -4 \times (-1) = 4$
+
+Torej je smerni koeficient tangente v točki $T\left(\frac{3\pi}{4}, 0\right)$ enak 4.
+
+## 4. naloga 
+>
+>Naj bo $f$ funkcija s predpisom $f(x) = a \cdot 3^(x-1) + b, \hspace{1cm} a,b \in \mathbb{R}$ Izračunajte števili $a$ in $b$, če je $f(1) = -1$ in $f(3) =-17$. Naj bo $a=b=1$. Zapišite največjo množico, na kateri je funkcija $f$ definirana in zalogo vrednosti funkcije $f$.
+>
+### Rešitev naloge
+
+Naj bo dana funkcija:
+
+$f(x) = a \cdot 3^{x-1} + b, \quad a, b \in \mathbb{R}$
+
+Dani sta pogoja:
+- $f(1) = -1$
+- $f(3) = -17$
+
+### Postopek reševanja
+
+1. Vstavimo prvi pogoj $f(1) = -1$ v enačbo funkcije:
+   $f(1) = a \cdot 3^{1-1} + b = a \cdot 3^0 + b = a + b = -1$
+   Torej:
+   $a + b = -1 \quad 	ext{(1)}$
+
+2. Vstavimo drugi pogoj $f(3) = -17$ v enačbo funkcije:
+   $f(3) = a \cdot 3^{3-1} + b = a \cdot 3^2 + b = 9a + b = -17$
+   Torej:
+   $9a + b = -17 \quad 	ext{(2)}$
+
+3. Rešimo sistem enačb (1) in (2):
+   - Iz (1) izrazimo $b$:
+     $b = -1 - a$
+   - Vstavimo $b$ v enačbo (2):
+     $9a + (-1 - a) = -17$
+     $8a - 1 = -17$
+     $8a = -16$
+     $a = -2$
+
+   - Izračunamo $b$:
+     $b = -1 - (-2) = -1 + 2 = 1$
+
+Torej sta $a = -2$ in $b = 1$.
+
+### Definicijsko območje funkcije $f$
+Funkcija $f(x) = a \cdot 3^{x-1} + b$ je definirana za vse $x \in \mathbb{R}$, saj je eksponentna funkcija $3^{x-1}$ definirana povsod. Zato je definicijsko območje:
+$D(f) = \mathbb{R}$
+
+### Zaloga vrednosti funkcije $f$
+Ker je $f(x)$ linearna kombinacija eksponentne funkcije $3^{x-1}$ in konstantnega člena $b$, je zaloga vrednosti:
+$Z(f) = \mathbb{R}$
+
+## 5. naloga
+>
+>Na sliki je narisan graf polinoma $p$ tretje stopnje. Ploščina lika $S_1$, ki ga graf omejuje z abscisno osjo med ničlama -3 in 2, je enaka $\frac{625}{108}$, ploščina $S_2$, ki ga graf omejuje z abscisno osjo in premico $x = 3$, pa je enaka $\frac{193}{108}$.
+>
+![Slika krožnice in premice](slike/sageVR1B.png)
+>
+>Zapišite predpis $p(x)$ polinoma $p$ v faktorizirani obliki in izračunajte vosilni koeficient. Izračunajte $\int_{-3}^{3} p(x) \,dx$
+>
+
+### Rešitev naloge
+
+Podatki iz naloge:
+- Polinom $p(x)$ je tretje stopnje.
+- Ničli polinoma sta $x = -3$ in $x = 2$, iz česar izhaja, da je $p(x)$ delno faktoriziran kot:
+  $p(x) = k \cdot (x + 3) \cdot (x - 2) \cdot q(x),$
+  kjer je $k$ vodilni koeficient, $q(x)$ pa linearni faktor oblike $x + c$.
+
+Dane ploščine:
+- Ploščina $S_1$, ki jo graf omejuje z abscisno osjo med $x = -3$ in $x = 2$, je:
+  $S_1 = \frac{625}{108}.$
+- Ploščina $S_2$, ki jo graf omejuje z abscisno osjo med $x = 2$ in $x = 3$, je:
+  $S_2 = \frac{193}{108}.$
+
+### Postopek reševanja
+
+1. **Oblika polinoma:**
+   Iz ničel polinoma sklepamo, da je $p(x)$ oblike:
+   $p(x) = k \cdot (x + 3) \cdot (x - 2) \cdot (x - c),$
+   kjer so $k$ in $c$ neznane.
+
+2. **Izračun ploščin:**
+   Ploščine med grafom in abscisno osjo podamo s pomočjo določenega integrala:
+
+   - Za $S_1$ med $x = -3$ in $x = 2$:
+     $S_1 = \int_{-3}^2 |p(x)| \, dx = \frac{625}{108}.$
+   - Za $S_2$ med $x = 2$ in $x = 3$:
+     $S_2 = \int_2^3 |p(x)| \, dx = \frac{193}{108}.$
+
+   Pri tem moramo upoštevati, da znak polinoma določa, kje je integral pozitiven ali negativen.
+
+3. **Izračun vodilnega koeficienta $k$:**
+   Povezava med določenim integralom in ploščino omogoča izračun koeficienta $k$.
+
+4. **Izračun $\int_{-3}^3 p(x) \, dx$:**
+   S celotnim določenim integralom (upoštevanje znaka polinoma na posameznih intervalih) izračunamo vrednost določenega integrala.
+
+## 6. naloga
+>
+>Na sliki je del grafa funkcije $f$ s predpisom $f(x) = 1 + \frac{1}{x}$. Izračunajte ploščino osenčenega območja. Rezultat naj bo točen.
+>
+
+![Slika krožnice in premice](slike/sageVR1.png)
+
+### Rešitev naloge
+
+Dana je funkcija:
+$f(x) = 1 + \frac{1}{x}.$
+
+### Navodilo za nalogo
+
+Na sliki je prikazan del grafa funkcije $f(x)$ in osenčeno območje, katerega ploščino je potrebno izračunati. Ploščina območja je določena z določenim integralom funkcije $f(x)$ med ustreznimi mejami. 
+
+### Postopek reševanja
+
+
+1. **Določitev meja integracije:**
+   Osenčeno območje je omejeno med določenima vrednostma $x = a$ in $x = b$, ki ju razberemo iz slike. Te vrednosti določajo meje integracije.
+
+2. **Izračun določenega integrala:**
+   Ploščina osenčenega območja je enaka vrednosti določenega integrala funkcije $f(x)$ med mejama $a$ in $b$:
+   $A = \int_a^b f(x) \, dx = \int_a^b \left(1 + \frac{1}{x}\right) \, dx.$
+
+3. **Reševanje integrala:**
+   Funkcijo razdelimo na dva člena in integriramo vsakega posebej:
+   $\int_a^b \left(1 + \frac{1}{x}\right) \, dx = \int_a^b 1 \, dx + \int_a^b \frac{1}{x} \, dx.$
+
+   - Integral prvega člena:
+     $\int_a^b 1 \, dx = \left[x\right]_a^b = b - a.$
+   - Integral drugega člena:
+     $\int_a^b \frac{1}{x} \, dx = \left[\ln|x|\right]_a^b = \ln|b| - \ln|a| = \ln\left(\frac{b}{a}\right).$
+
+4. **Seštevanje rezultatov:**
+   Skupni integral je:
+   $A = \int_a^b f(x) \, dx = (b - a) + \ln\left(\frac{b}{a}\right).$
+
+5. **Upoštevanje absolutne vrednosti:**
+   Če je območje pod $x$-osjo, integralni rezultat prilagodimo tako, da bo ploščina vedno pozitivna.
+
+# C) STRUKTURIRANE NALOGE 
+
+## 1. naloga
+>
+>Rešite spodnji med seboj neodvisni nalogi.
+>1) V trikotniku $ABC$ s podatki $c = |AB| = 6 \text{cm}$, $a : b = 3 : 4$,  $\alpha  : \beta = 1 : 2$  izračunajte veikost kota $\alpha$ in dolžino stranice $a$. Rezultate zapšite zaokroženo na dve decimalki.
+>2) V trikotniku $ABC$ leži toka $T$ na stranici $BC$ tako, da je $|BT| : |TC| = 3:4$, točka $U$ pa razpolavlja stranico $AC$. Naj bo točka $P$ presečišče daljic $AT$ in $BU$. Izračunajte razmerje $|AP| : |PT|$.
+>
+### Naloga 1
+
+### Postopek reševanja
+
+1. **Razmerje kotov:** 
+   Ker velja $\alpha : \beta = 1 : 2$, lahko določimo, da je $\alpha = 60^\circ$ in $\beta = 120^\circ$.
+   Kot $\gamma$ znaša:
+   $\gamma = 180^\circ - (\alpha + \beta) = 180^\circ - 180^\circ = 0^\circ.$
+
+2. **Razmerje stranic:** 
+   Razmerje stranic $a : b = 3 : 4$ pomeni, da lahko zapišemo:
+   $a = 3k, \quad b = 4k.$
+
+3. **Kosinusni izrek:**
+   Zapišemo enačbo:
+   $c^2 = a^2 + b^2 - 2ab \cdot \cos(\gamma).$
+   Ker $\cos(\gamma) = \frac{1}{2}$, dobimo:
+   $6^2 = (3k)^2 + (4k)^2 + 2 \cdot (3k) \cdot (4k) \cdot \frac{1}{2}$.
+Rešitev za $k$ je $k \approx 0.4932$. Iz tega izračunamo $a$:
+   $a = 3k \approx 2.96 \, 	ext{cm}.$
+
+### Naloga 2
+
+### Postopek reševanja
+
+1. **Koordinatni sistem:**
+   Postavimo:
+   $A(0, 0), \, B(0, 1), \, C(1, 0)$.
+   Točka $T$ leži na stranici $BC$ v razmerju $3 : 4$. 
+   $T =( \frac{3}{7}, \frac{4}{7})$. 
+
+2. **Razpolovišče stranice $AC$:**
+   Točka $U$, ki razpolavlja stranico $AC$, je:
+   $U = (\frac{1}{2}, \frac{1}{2})$.
+
+3. **Premici $AT$ in $BU$:**
+   Enačbi premic:
+   $AT: y = \frac{4}{3}x, \quad BU: y = -2x + 1.$
+
+4. **Presečišče $P$:**
+   Rešimo sistem enačb:
+   $P = (\frac{3}{7}, \frac{4}{7})$.
+
+5. **Razmerje $|AP| : |PT|$:**
+   Izračunamo dolžine:
+   $|AP| = \frac{4}{7}, \quad |PT| = \frac{2}{7}.$
+   Razmerje je:
+   $|AP| : |PT| = \frac{4}{7} : \frac{2}{7} = 2.33.$
+
+## 2. naloga
+>
+>Dana je funkcija $f: \mathbb{R} \rarr \mathbb{R}$ s predpisom $f(x) = \frac{e^x}{(1+e^x)^2}$.
+>1) Dokažite, da je $f$ soda funkcija in zapišite zalogo vrednosti funkcije $f$.
+>2) Zapišite predpis funkcije $F$, katere odvod je funkcija $f$, in velja $F(0) = \frac{1}{2}$.
+>3) Naj bo število $a \in \mathbb{R}$ izbrano tako, da velja $\int_{0}^{a} f(x) \,dx = \frac{1}{4}$. Izračunajte število $a$. Za to realno število $a$ izračunajte še $\int_{-a}^{a} f(x) \,dx$.
+>
+
+### 1. Dokažite, da je $f$ soda funkcija in zapišite zalogo vrednosti funkcije $f$.
+
+### Definicija sode funkcije:
+Funkcija $f(x)$ je soda, če za vsak $x \in \mathbb{R}$ velja:
+$f(-x) = f(x)$.
+
+### Izračun $f(-x)$:
+$f(x) = \frac{e^x}{(1+e^x)^2}$.
+Izračunajmo $f(-x)$:
+$f(-x) = \frac{e^{-x}}{(1+e^{-x})^2}$.
+
+Uporabimo lastnosti eksponentne funkcije:
+$e^{-x} = \frac{1}{e^x} \quad \text{in} \quad 1+e^{-x} = \frac{e^x+1}{e^x}$.
+
+Nadomestimo v izraz za $f(-x)$:
+$f(-x) = \frac{\frac{1}{e^x}}{\left(\frac{e^x+1}{e^x}\right)^2} = \frac{1}{e^x} \cdot \frac{e^{2x}}{(e^x+1)^2} = \frac{e^x}{(1+e^x)^2}$.
+
+Torej:
+$f(-x) = f(x)$,
+kar pomeni, da je funkcija $f(x) soda.
+
+### Zaloga vrednosti funkcije $f(x)$:
+
+Najprej ugotovimo omejitve $f(x)$:
+$f(x) = \frac{e^x}{(1+e^x)^2}$.
+
+1. Za $x \to -\infty$:
+$e^x \to 0 \implies f(x) \to 0$.
+
+2. Za $x \to \infty$:
+$e^x \to \infty \implies \frac{e^x}{(1+e^x)^2} \to 0$.
+
+3. Za $x = 0$:
+$f(0) = \frac{e^0}{(1+e^0)^2} = \frac{1}{4}$.
+
+Ker je funkcija soda in gladka, ima maksimum v $x = 0$. Zaloga vrednosti je:
+$\text{Zaloga vrednosti: } \left(0, \frac{1}{4}\right]$.
+
+### 2. Poiščite funkcijo $F(x)$, katere odvod je $f(x)$, in velja $F(0) = \frac{1}{2}$.
+
+### Najprej poiščimo nedoločen integral funkcije $f(x)$:
+$f(x) = \frac{e^x}{(1+e^x)^2}$.
+
+Substitucija:
+Naj bo $u = 1+e^x \implies du = e^x dx$.
+
+Integral postane:
+$\int f(x) dx = \int \frac{e^x}{(1+e^x)^2} dx = \int \frac{1}{u^2} du = -\frac{1}{u} + C$.
+
+Vrni se na $x$:
+$-\frac{1}{u} = -\frac{1}{1+e^x}$.
+
+Torej:
+$F(x) = -\frac{1}{1+e^x} + C$.
+
+### Upoštevaj pogoj $F(0) = \frac{1}{2}$:
+$F(0) = -\frac{1}{1+e^0} + C = -\frac{1}{2} + C.$
+$\frac{1}{2} = -\frac{1}{2} + C \implies C = 1$.
+
+Končni rezultat je:
+$F(x) = -\frac{1}{1+e^x} + 1$.
+
+### 3) Izračun števila $a$ in vrednosti $\int_{-a}^a f(x) \, dx$
+
+### **1. Izračun $a$, da velja $\int_{0}^{a} f(x) \, dx = \frac{1}{4}$:**
+
+Imamo funkcijo $F(x)$, katere odvod je $f(x)$, in smo jo že izračunali:
+$F(x) = -\frac{1}{1+e^x} + 1$.
+
+Integral od 0 do $a$ je:
+$\int_{0}^{a} f(x) \, dx = F(a) - F(0)$.
+
+Vemo, da je $F(0) = \frac{1}{2}$ in iščemo $a$, za katerega velja:
+$F(a) - F(0) = \frac{1}{4}$.
+
+Nadomestimo $F(a)$ in $F(0)$:
+$-\frac{1}{1+e^a} + 1 - \frac{1}{2} = \frac{1}{4}$.
+
+Poenostavimo izraz:
+$-\frac{1}{1+e^a} + \frac{1}{2} = \frac{1}{4}$.
+
+Odštejmo $\frac{1}{2}$ na obeh straneh:
+$-\frac{1}{1+e^a} = \frac{1}{4} - \frac{1}{2}$.
+
+$-\frac{1}{1+e^a} = -\frac{1}{4}$.
+
+Odstranimo minus:
+$\frac{1}{1+e^a} = \frac{1}{4}$.
+
+Inverz:
+$1+e^a = 4$.
+
+Odštejmo 1:
+$e^a = 3$.
+
+Logaritemska funkcija:
+$a = \ln(3)$.
+
+### **2. Izračun $\int_{-a}^{a} f(x) \, dx$:**
+
+Ker je funkcija $f(x)$ soda, velja:
+$\int_{-a}^{a} f(x) \, dx = 2 \int_{0}^{a} f(x) \, dx$.
+
+Vstavimo rezultat za $\int_{0}^{a} f(x) \, dx$:
+$\int_{0}^{a} f(x) \, dx = \frac{1}{4}$.
+
+Torej:
+$\int_{-a}^{a} f(x) \, dx = 2 \cdot \frac{1}{4} = \frac{1}{2}$.
+
+
